@@ -1,0 +1,325 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1.  
+10. Compare
+------------------------*/
+
+/*----------------
+[Styles for devices(<1024px)]
+*/
+@media (max-width: 1024px) {
+  .block_left,
+  .block_right {
+    width: 100%;
+  }
+  .block_search-tags {
+      display: none;
+  }
+  .block_down .down_btn {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    text-align: left;
+  }
+}
+
+/*----------------
+[Styles for devices(<991px)]
+*/
+@media (max-width: 991px) {
+  .block_logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .block_logo img {
+    margin-top: 0;
+    margin: 0 auto;
+  }
+  .block_menu_top {
+    float: left;
+    width: 100%;
+  }
+  .nav_menu {
+    text-align: center;
+  }
+  .nav_menu_item {
+    display: inline-block;
+    position: relative;
+    float: none;
+    border-top: none;
+  }
+  .block_search_top {
+    display: block;
+  }
+}
+
+/*----------------
+[Styles for devices(<800px)]
+*/
+@media (max-width: 800px) {
+  .topics_cate_list .topics_item {
+    padding: 15px;
+  }
+  .topics_cate_list .topics_item .info {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .topics_cate_list .topics_item .img_thumb {
+    display: none;
+  }
+}
+
+/*----------------
+[Styles for devices(<600px)]
+*/
+@media (max-width: 600px) {
+  .nav_menu {
+    font-size: 13px;
+  }
+  .list_menu_footer .list_menu_footer_title {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333;
+  }
+  .list_menu_footer:first-child .list_menu_footer_title {
+    padding-top: 0;
+  }
+  .nav-toogle {
+    display: block;
+  }
+  .block_menu_top {
+    background-color: #fbfbfb;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.15);
+    clear: both;
+    float: none;
+    display: block;
+    position: fixed !important;
+    right: -60% !important;
+    width: 60%;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    left: auto !important;
+    border-right: 1px solid #ddd;
+  }
+  .block_menu_top.has-open {
+    right: 0 !important;
+  }
+  body.menu-open {
+    overflow: hidden;
+    left: 0;
+    right: 0;
+  }
+  .nav_menu {
+    padding: 10px;
+    float: left;
+    width: 100%;
+    height: 100%;
+  }
+  .nav_menu_item {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  .nav_menu_item .nav-user {
+    background: url(../images/icon/user.png) 3px 0 no-repeat;
+  }
+  .nav_menu_item .nav-products {
+    background: url(../images/icon/proicon.png) 3px 0 no-repeat;
+  }
+  .nav_menu_item .nav-topics {
+    background: url(../images/icon/topicicon.png) 3px 0 no-repeat;
+  }
+  .nav_menu_item .nav-apps {
+    background: url(../images/icon/appicon.png) 3px 0 no-repeat;
+  }
+  .nav_menu_item .nav-game {
+    background: url(../images/icon/gameicon.png) 3px 0 no-repeat;
+  }
+  .block_menu_top.has-open li.parent {
+    position: relative;
+  }
+  .block_menu_top.has-open li.parent .plus {
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    z-index: 9;
+    cursor: pointer;
+  }
+  .block_menu_top.has-open li.parent .plus:before {
+    content: "\f067";
+    font-family: "FontAwesome";
+  }
+  .block_menu_top.has-open li.parent .plus.open:before {
+    content: "\f068";
+  }
+  .nav_submenu {
+    box-shadow: none;
+    display: none;
+    left: 0px;
+    opacity: 1;
+    padding: 0 0 0 10px;
+    position: relative;
+    top: 0;
+    visibility: visible;
+    width: 100%;
+    border: none;
+  }
+  .pro_detail_img img {
+    margin: 0 auto;
+  }
+  .pro_detail_info h1 {
+    text-align: center;
+  }
+  .topics_item .topics_img img {
+    width: 100%;
+  }
+  .pro_detail_info .down_btn {
+    text-align: center;
+  }
+  .pro_detail_version .table-responsive {
+    margin-bottom: 0;
+  }
+  .block_search_top {
+    margin-bottom: 10px;
+  }
+}
+
+/*----------------
+[Styles for devices(>=992px and <=481px)]
+*/
+@media (max-width: 992px) and (min-width: 320px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*----------------
+[Styles for devices(<360px)]
+*/
+@media (max-width: 480px) {
+  .topics_item .topics_thumb {
+    width: 100%;
+  }
+  .topics_item .topics_thumb img {
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .topics_item .topics_info {
+    width: calc(100% - 0px);
+    padding-left: 0;
+    text-align: center;
+  }
+  .topics_item .topics_info .editors_author {
+    line-height: 30px;
+  }
+}
+
+/*----------------
+[Styles for devices(<360px)]
+*/
+@media (max-width: 360px) {
+  .product_items .product_item {
+    width: 100%;
+  }
+  .copyright {
+    text-align: left;
+    line-height: 20px;
+  }
+  .copyright a {
+    display: block;
+    margin-left: 0;
+    padding-left: 15px;
+  }
+  .copyright a:before {
+    content: ".";
+    color: #666;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .block_related .news_items .news_item {
+    width: 100%;
+  }
+  .topics_item .topics_info .editors_text {
+    margin-bottom: 10px;
+  }
+  .details-rating .rating-info span {
+    display: none;
+  }
+}
+
+/*----------------
+[Styles for devices(<360px)]
+*/
+@media (max-width: 320px) {
+  .pro_detail_info h1 {
+    font-size: 27px;
+  }
+  .block_faq .down_btn .btn_down {
+    display: block;
+    width: 100px;
+    margin: 3px 0;
+  }
+}
+
+/*===== 5 Columns =====*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
